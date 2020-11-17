@@ -6,14 +6,18 @@ Angular primeNG with Electron integrated
 ### download dependencies
 npm install
 
-### compile angualr prod
+### compile angular project
 nb build --prod
 
 ### start electron app
 npm run electron:start
 
-### compile electron project for linux
+### compile electron project for linux (Ubuntu)
 npm run electron:linux
+
+[You must install some dependencies](https://www.electronjs.org/docs/development/build-instructions-linux)
+
+The project is prepared for compile in windows, Mac or Linux
 
 ### PoC Web from browser
 ![from_Brower](https://user-images.githubusercontent.com/1216181/99386156-4b823600-28d2-11eb-88bf-c3facb34296c.png)
