@@ -25,7 +25,7 @@ npm run electron:linux
 
 [You must install some dependencies](https://www.electronjs.org/docs/development/build-instructions-linux)
 
-The project is prepared for compile in windows, Mac or Linux. Check dependencies for each case
+The project is prepared for compile on Windows, Mac or Linux. Check dependencies for each case
 ```javascript
 npm run electron:mac
 npm run electron:windows
