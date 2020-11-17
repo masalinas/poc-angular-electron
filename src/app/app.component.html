@@ -1,0 +1,13 @@
+<p-dialog [(visible)]="display" styleClass="mydialog">
+  <p-header>
+    {{title}}
+  </p-header>
+  This is a primeNG Dialog example
+  <p-footer>
+    <button pButton type="button" (click)="closeDialog($event)" icon="pi pi-check" label="Close" ></button>
+  </p-footer>
+</p-dialog>
+
+<button pButton type="button" (click)="showDialog($event)" icon="pi pi-info-circle" label="Show" ></button>
+
+<router-outlet></router-outlet>

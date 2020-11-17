@@ -1,0 +1,72 @@
+{
+    "productName": "my-angular-electron",
+    "buildVersion": "1.0.0",
+    "copyright": "Miguel Salinas Gancedo",
+    "directories": {
+      "output": "app-builds"
+    },
+    "files": [
+        "**/*",
+        "!**/*.ts",
+        "!*.code-workspace",
+        "!LICENSE.md",
+        "!package.json",
+        "!package-lock.json",
+        "!src/",
+        "!e2e/",
+        "!hooks/",
+        "!angular.json",
+        "!_config.yml",
+        "!karma.conf.js",
+        "!tsconfig.json",
+        "!tslint.json"
+    ],
+    "extraFiles": [
+      {
+        "from": "binaries",
+        "to": "binaries",
+        "filter": ["**/*"]
+      },
+      {
+        "from": "templates",
+        "to": "templates",
+        "filter": ["**/*"]
+      },
+      {
+        "from": "logs",
+        "to": "logs",
+        "filter": ["**/*"]
+      }
+    ],
+    "extraResources": [
+    ],
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "deleteAppDataOnUninstall": true,
+      "createDesktopShortcut": true,
+      "installerIcon": "./icon.ico",
+      "uninstallerIcon": "./icon.ico"
+    },
+    "win": {
+      "icon": "./icon.ico",
+      "publisherName": "Miguel Salinas Gancedo",
+      "target": [
+        "portable"
+      ]
+    },
+    "mac": {
+      "icon": "./icon.ico",
+      "target": [
+        "dmg"
+      ]
+    },
+    "linux": {
+      "icon": "./icon.png",
+      "target": [
+        "deb"
+      ]
+    }
+  }
