@@ -18,7 +18,7 @@ ng build --prod
 npm run electron:start
 ```
 
-### compile electron project for linux (Ubuntu)
+### compile electron app for linux (Ubuntu)
 ```javascript
 npm run electron:linux
 ```
