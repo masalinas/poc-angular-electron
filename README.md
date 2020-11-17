@@ -10,7 +10,7 @@ npm install
 
 ### compile angular project
 ```javascript
-nb build --prod
+ng build --prod
 ```
 
 ### start electron app
